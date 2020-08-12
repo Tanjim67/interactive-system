@@ -16,7 +16,7 @@ void loop() {
   Serial.print(" ");
   delay(50);
   if (sensorValue >=60){    //when the pressure value is greater than 60 it will wait for a certain time
-    delay(1000);
+    delay(3000);
     if(sensorValue >=60){   // if the user faces an emergency or presses the button for a long time it triggers the action
       digitalWrite(buzzerPin, HIGH);
     }
